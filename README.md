@@ -1,4 +1,4 @@
-# clean-ia
+# Code-Hexorciste
 
 Agent Python qui analyse un projet existant et le refactorise vers une architecture que tu imposes, ou vers celle qu'il propose.
 
