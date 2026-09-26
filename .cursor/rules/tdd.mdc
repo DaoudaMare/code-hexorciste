@@ -1,0 +1,7 @@
+---
+description: "TDD (test d'abord), applicable à tout langage, modulé selon le palier du projet (voir ai/rules/scope.md)"
+globs: "**/*"
+alwaysApply: true
+---
+
+@ai/rules/tdd.md

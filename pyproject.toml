@@ -1,0 +1,17 @@
+[project]
+name = "clean-ia"
+version = "0.1.0"
+description = "Agent qui analyse un projet et le refactorise vers une architecture cible."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["cursor-sdk>=0.1.0"]
+
+[project.scripts]
+clean-ia = "clean_ia.cli.main:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

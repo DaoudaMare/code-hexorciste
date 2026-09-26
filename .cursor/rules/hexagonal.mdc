@@ -1,0 +1,7 @@
+---
+description: "Architecture hexagonale (ports & adaptateurs), applicable à tout langage, modulée selon le palier du projet (voir ai/rules/scope.md)"
+globs: "**/*"
+alwaysApply: true
+---
+
+@ai/rules/hexagonal.md

@@ -1,0 +1,26 @@
+┌─────────────────────────────────────────────┐
+│                  CLI / Interface              │
+│         (terminal, VSCode extension, web)     │
+└───────────────────┬───────────────────────────┘
+                     │
+┌────────────────────▼─────────────────────────────┐
+│              Orchestrateur (Agent)               │
+│  - Gère la boucle de conversation                │
+│  - Décide quels outils appeler                   │
+│  - Gère le contexte / mémoire                    │
+└───────┬───────────────────────┬──────────────────┘
+        │                       │
+┌───────▼────────┐    ┌─────────▼────────────┐
+│  Analyseur de   │   │   Cursor API         │
+│  projet         │   │   (tool use /        │
+│  - Scan fichiers│   │   function calling)  │
+│  - AST parsing  │   └─────────┬────────────┘
+│  - Dépendances  │             │
+└───────┬─────────┘   ┌─────────▼───────────┐
+        │             │   Outils (tools)     │
+┌───────▼─────────┐   │  - read_file         │
+│  Index / RAG     │   │  - write_file        │
+│  (embeddings)    │   │  - list_directory    │
+│  - Vector DB      │   │  - run_tests         │
+│  - Chunking code  │   │  - git_diff          │
+└──────────────────┘   └──────────────────────┘

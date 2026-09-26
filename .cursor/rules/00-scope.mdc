@@ -1,0 +1,7 @@
+---
+description: "Paliers de rigueur (taille, complexité, sensibilité) utilisés par les autres règles du projet"
+globs: "**/*"
+alwaysApply: true
+---
+
+@ai/rules/scope.md
